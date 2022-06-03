@@ -1,0 +1,35 @@
+<h1>ngFor - Directive</h1><hr>
+<!-- <h2 *ngFor="let x of names">
+  {{x}}
+</h2> -->
+<!-- <h2 *ngFor="let x of names; index as i">
+  {{i}} - {{x}}
+</h2> -->
+<!-- <h2 *ngFor="let x of names; first as f">
+  {{x}} - {{f}}
+</h2> -->
+<!-- <h2 *ngFor="let x of names; last as l">
+  {{x}} - {{l}}
+</h2> -->
+<!-- <h2 *ngFor="let x of names; even as e">
+  {{x}} - {{e}}
+</h2> -->
+<!-- <h2 *ngFor="let x of names; odd as o">
+  {{x}} - {{o}}
+</h2> -->
+
+<!-- <div *ngFor="let x of myValues | keyvalue">
+
+  <h1> {{x.key}} - {{x.value}}</h1>
+</div> -->
+
+<h3 *ngFor="let y of myValues">
+  <h2 *ngFor="let x of y | keyvalue ">
+    {{x.key}} - {{x.value}}
+  </h2>
+  <hr>
+</h3>
+
+
+
+

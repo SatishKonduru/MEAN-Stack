@@ -1,0 +1,4 @@
+<h1>Parent Component</h1>
+<button mat-raised-button color="warn" (click)="toggleChild()">ToggleChild</button>
+<input matInput type="text" [(ngModel)]="myName">
+<app-my-child *ngIf="isChild" [myName]="myName"></app-my-child>

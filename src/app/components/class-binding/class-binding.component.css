@@ -1,0 +1,16 @@
+h2{
+  text-align: center;
+  color: blueviolet;
+}
+.textColor{
+  color:rgb(243, 199, 3) ;
+}
+.fontSize{
+  color: red;
+  font-size: 50px;
+}
+.textStyle{
+  color: blue;
+  font-size: 75px;
+  font-style: italic;
+}

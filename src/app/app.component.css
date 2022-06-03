@@ -1,0 +1,20 @@
+.RSK-Header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+mat-nav-list{
+  width: 250px;
+}
+.RSK-Container{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 90vh;
+}
+a:hover{
+  background: #fff;
+  text-decoration: none;
+}

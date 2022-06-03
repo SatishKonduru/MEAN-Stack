@@ -1,0 +1,37 @@
+.product{
+  padding: 40px 10px 10px 0px;
+}
+.box{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.product-img img{
+  width: 180px;
+  height: 300px
+}
+.content h4{
+  margin-top: 10px;
+}
+.content span{
+  font-weight: 800;
+  font-size: 18px;
+}
+button{
+  margin: 10px;
+}
+.cart-btn{
+  border-radius: 7px;
+  background: green;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 4px 16px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.cart-btn:hover{
+  background: #fff;
+  color: green;
+  border: 1px solid red;
+}

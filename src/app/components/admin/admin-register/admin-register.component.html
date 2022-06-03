@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <mat-toolbar class="justify-content-center" color="warn">
+    <div class="mat-headline">
+      Admin Section
+    </div>
+  </mat-toolbar>
+  <form [formGroup]="adminRegService.adminForm" (submit)="onSubmit()">
+    <mat-grid-list cols="2" rowHeight="400px">
+      <mat-grid-tile>
+        <div class="adminControls">
+          <input type="hidden" formControlName="_id">
+          <mat-form-field appearance="outline">
+            <mat-label>Full Name:</mat-label>
+            <input matInput formControlName="fullName" required>
+            <mat-error>This field is required.</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Email:</mat-label>
+            <input matInput formControlName="email" >
+            <mat-error>Invalid eMail format</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Mobile:</mat-label>
+            <input matInput formControlName="mobile" >
+            <mat-error *ngIf="adminRegService.adminForm.controls['mobile'].errors?.required">This filed is required</mat-error>
+            <mat-error *ngIf="adminRegService.adminForm.controls['mobile'].errors?.minlength">Min. length is 10 digits</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>City:</mat-label>
+            <input matInput formControlName="city">
+          </mat-form-field>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="adminControls">
+          <div class="myPadding">
+            <mat-radio-group formControlName="gender" color="primary">
+              <mat-radio-button value="1">Male</mat-radio-button>
+              <mat-radio-button value="2">Female</mat-radio-button>
+              <mat-radio-button value="3">Other</mat-radio-button>
+            </mat-radio-group>
+          </div>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Username:</mat-label>
+            <input matInput formControlName="username" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Password:</mat-label>
+            <input type="password" matInput formControlName="password" required>
+          </mat-form-field>
+
+          <div class="myPadding">
+            <mat-checkbox formControlName="isAdmin" color="warn">
+              is Admin?
+            </mat-checkbox>
+          </div>
+
+          <div class="buttonRow">
+            <button [disabled]="adminRegService.adminForm.invalid"  mat-raised-button color="primary" type="submit">Register</button>
+            <button mat-raised-button color="warn" type="button" (click)="onClear()">Clear</button>
+          </div>
+
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
+</div>

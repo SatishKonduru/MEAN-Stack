@@ -1,0 +1,11 @@
+<h1>You selected the course with ID: {{courseId}}</h1>
+<button mat-raised-button color="primary" (click)="goBack()">Previous</button>
+<button mat-raised-button color="warn" (click)="goNext()">Next</button>
+<button mat-flat-button color="accent" (click)="goToDetails()">Go To Back</button>
+<br><br>
+<router-outlet></router-outlet>
+<button mat-raised-button color="warn" (click)="showDuration()"> Course Duration </button>
+<button mat-raised-button color="primary" (click)="showTutor()"> Course Tutor </button>
+
+
+

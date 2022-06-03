@@ -1,0 +1,7 @@
+.mat-my-primary {
+  background-image: linear-gradient(to right, #92da90 , #084600);
+  color:#fff;
+}
+.mat-my-primary:hover {
+  background-image: linear-gradient(to right, #fdfffd , #e00404);
+}

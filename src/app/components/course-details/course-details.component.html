@@ -1,0 +1,5 @@
+<h1>Course Details Component: </h1>
+<div [class.selected] = "isSelected(x)" *ngFor="let x of course" (click)="onSelect(x)">
+  <h2>{{x.id}} - {{x.name}} - {{x.fee}}</h2>
+ </div>
+<h2>{{errMsg}}</h2>

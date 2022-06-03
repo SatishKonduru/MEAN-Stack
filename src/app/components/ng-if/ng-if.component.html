@@ -1,0 +1,35 @@
+<h1>ngIf - Directive</h1>
+
+
+
+<!-- <h2 *ngIf="check;else false2 " ></h2> -->
+<h2 *ngIf="check; then True1 else false2"></h2>
+
+<ng-template #false1>
+
+  <h3> Condition becomes FALSE - 1 </h3>
+  <h3> Condition becomes FALSE - 1 </h3>
+  <h3> Condition becomes FALSE - 1 </h3>
+  <h3> Condition becomes FALSE - 1 </h3>
+</ng-template>
+
+<ng-template #false2>
+  <h3> Condition becomes FALSE - 2 </h3>
+  <h3> Condition becomes FALSE - 2 </h3>
+  <h3> Condition becomes FALSE - 2 </h3>
+  <h3> Condition becomes FALSE - 2 </h3>
+</ng-template>
+
+<ng-template #True1>
+  <h3> Condition becomes TRUE - 1 </h3>
+  <h3> Condition becomes TRUE - 1 </h3>
+  <h3> Condition becomes TRUE - 1</h3>
+  <h3> Condition becomes TRUE - 1 </h3>
+</ng-template>
+
+<ng-template #True2>
+  <h3> Condition becomes TRUE - 2 </h3>
+  <h3> Condition becomes TRUE - 2 </h3>
+  <h3> Condition becomes TRUE - 2 </h3>
+  <h3> Condition becomes TRUE - 2 </h3>
+</ng-template>

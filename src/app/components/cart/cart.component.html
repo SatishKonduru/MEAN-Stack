@@ -1,0 +1,49 @@
+<section class="cart-section">
+  <h2>Cart</h2>
+  <div class="table-responsive">
+    <table>
+      <tr>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Sub Total</th>
+          <th>Remove Item</th>
+      </tr>
+      <tr *ngFor="let product of cartDetails">
+        <td>
+          <img src="{{product.img}}">
+        </td>
+        <td>
+          Rs. {{product.amt}}/-
+        </td>
+        <td>
+          <div class="content">
+           <button mat-flat-button color="primary" (click)="incrementCount(product.pId, product.quantity)"><mat-icon>add</mat-icon></button>
+            <span>{{product.quantity}}</span>
+            <button mat-flat-button color="warn"><mat-icon (click)="decrementCount(product.pId, product.quantity)">remove</mat-icon></button>
+          </div>
+        </td>
+        <td>
+         <strong>Rs. {{product.quantity * product.amt}}</strong>
+        </td>
+        <td>
+          <button mat-flat-button color="warn" (click)="singleDelete(product.pId)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+ </table>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Total: Rs. {{grandTotal}} /-</h3>
+    </div>
+    <div class="col-md-6 text-end">
+      <button mat-icon-button color="warn" (click)="removeAll()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <a class="btn btn-success d-flex justify-content-center" [routerLink]="'/checkout'"> Checkout</a>
+  </div>
+</section>

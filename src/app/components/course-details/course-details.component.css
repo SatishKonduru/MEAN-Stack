@@ -1,0 +1,9 @@
+h1{
+  text-align: center;
+  color: green;
+}
+
+.selected{
+  background-color: green;
+  color: white;
+}

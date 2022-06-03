@@ -1,0 +1,29 @@
+.cart-section{
+  padding: 40px 0px;
+}
+table{
+  font-family: play;
+  border-collapse: collapse;
+  width: 100%;
+}
+img{
+  width: 50px;
+  height: 70px;
+}
+th, td{
+  border: 1px solid #dddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){
+  background-color: rgba(198, 167, 233, 0.867);
+}
+.content span{
+  font-weight: 800;
+  font-size: 18px;
+
+}
+button{
+  margin-left: 5px;
+  margin-right: 5px;
+}

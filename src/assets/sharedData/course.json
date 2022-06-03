@@ -1,0 +1,5 @@
+ [
+  {"id": 1, "name":"Angular", "fee": 1000},
+  {"id": 2, "name":"React", "fee": 5000},
+  {"id": 3, "name":"Vue", "fee": 7000}
+]

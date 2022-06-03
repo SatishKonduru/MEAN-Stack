@@ -1,0 +1,20 @@
+.adminControls{
+  width: 100%;
+  padding: 5%;
+}
+
+.adminControls>*{
+  width: 100%;
+}
+
+.myPadding{
+  padding: 10px;
+  margin-left: 10px;
+}
+mat-radio-button{
+  margin-left: 10px;
+}
+
+.buttonRow button{
+  margin: 5px;
+}

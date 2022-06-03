@@ -1,0 +1,20 @@
+.mobileControls{
+  width: 100%;
+  padding: 5%
+}
+.mobileControls>*{
+  width: 100%;
+}
+.myPadding{
+  padding-bottom: 10px;
+}
+mat-radio-group mat-radio-button{
+  margin-left: 15px;
+}
+.buttonRow button{
+  margin: 5px;
+}
+.box{
+  width: 250px;
+  height: 250px;
+}
